@@ -1,0 +1,123 @@
+.header {
+    margin-top: 0;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 0px;
+    font-size: larger;
+}
+
+h1 {
+    margin-top: 0px;
+    padding-top: 0px;
+    color: #374375;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    background-color: #fffcf5;
+    text-align: center;
+}
+
+p {
+    font-weight: 300;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    color: #374375;
+}
+
+input[type="submit"] {
+    transition: all ease-in-out 0.3s;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-3px);
+}
+
+.container-box {
+    max-height: fit-content;
+    max-width: 400px;
+    margin: 80px auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.container {
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: larger;
+}
+
+.container p {
+    margin-bottom: 10px;
+}
+
+.container input[type="email"],
+.container input[type="password"] {
+    width: 100%;
+    padding: 13px;
+    margin-top: 10px;
+    margin-bottom: 10px; /* Ensure consistent margin for both fields */
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-sizing: border-box;
+    color: #374375;
+    font-size: 14px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for focus */
+}
+
+/* Add focus style for input fields */
+.container input[type="email"]:focus,
+.container input[type="password"]:focus {
+    border-color: #374375;
+    box-shadow: 0 0 5px rgba(55, 67, 117, 0.5);
+    outline: none;
+}
+
+.container input[type="submit"] {
+    width: 40%;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    background-color: #babde2;
+    border: 1px solid #babde2;
+    border-radius: 15px;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #374375;
+    color: #fffcf5;
+    border-color: #374375;
+    cursor: pointer;
+}
+
+.bottom {
+    font-size: 12px;
+    margin-top: 0px;
+    color: #374375;
+}
+
+.bottom a {
+    color: #374375;
+    text-decoration: none;
+}
+
+.bottom a:hover {
+    text-decoration: underline;
+}
+
+.bottom label {
+    display: inline-block;
+    margin-right: 15px;
+}

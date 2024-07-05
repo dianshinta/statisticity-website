@@ -1,0 +1,238 @@
+* {
+    font-family: 'Karla', sans-serif;
+}
+
+.features-header {
+    padding: 20px 30px;
+}
+
+.features-header span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.features-header p {
+    font-style: italic;
+}
+
+html, body {
+    height: 100%;
+}
+
+p, i, h1 {
+    color: #374375;
+}
+
+.filter-container {
+    display: flex;
+    gap: 10px;
+    margin: 0 2em 0em 2em;
+    width: 60vw;
+}
+
+.filter-container h2 {
+    font-size: 1.5em;
+    color: #363d55;
+    font-weight: 600;
+}
+
+.filter-container label {
+    display: block;
+    margin-top: 10px;
+    color: #363d55;
+    font-weight: 600;
+}
+
+.filter-container select, .filter-container button {
+    display: block;
+    padding: 0 0.5em;
+    margin-top: 5px;
+}
+
+.filter-container button {
+    height: 2.7em;
+    background-color: #374375;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.3em;
+}
+
+.container {
+    width: 90vw;
+    max-width: 62.5em;
+    position: relative;
+    margin: 0 2em;
+}
+.add-flashcard-con {
+    width: 50vw;
+    position: relative;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.add-flashcard-con button {
+    font-size: 1em;
+    background-color: #374375;
+    color: #ffffff;
+    padding: 5px 10px;
+    font-weight: 500;
+    border-radius: 0.4em;
+}
+
+#card-con {
+    margin-top: 1em;
+}
+
+.question-container {
+    width: 90vw;
+    max-width: 34em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    padding: 1em 2em;
+    border-radius: 0.6em;
+    box-shadow: 0 1em 2em rgba(28, 0, 80, 0.1);
+}
+.question-container h3 {
+    font-size: 1.5em;
+    color: #363d55;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0em;
+}
+
+.card {
+    position: inherit;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 11fr 1fr;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+.error-con {
+    align-self: center;
+}
+#error {
+    color: #895159;
+    font-weight: 400;
+}
+.fa-xmark {
+    font-size: 1.4em;
+    height: 1.8em;
+    width: 1.8em;
+    display: grid;
+    place-items: center;
+    color: #895159;
+    border-radius: 50%;
+    cursor: pointer;
+    justify-self: flex-end;
+}
+label {
+    color: #363d55;
+    font-weight: 600;
+    margin-bottom: 0.3em;
+}
+textarea.input, select.input {
+    width: 100%;
+    padding: 0.7em 0.5em;
+    border: 1px solid #d0d0d0;
+    outline: none;
+    color: #414a67;
+    border-radius: 0.3em;
+    resize: none;
+}
+textarea:not(:last-child), select:not(:last-child) {
+    margin-bottom: 1.2em;
+}
+textarea:focus, select:focus {
+    border-color: #363d55;
+}
+#save-btn {
+    font-size: 1em;
+    background-color: #374375;
+    color: #ffffff;
+    padding: 0.6em 0;
+    border-radius: 0.3em;
+    font-weight: 600;
+}
+.card-list-container {
+    display: grid;
+    padding: 0.2em;
+    gap: 1.5em;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.card {
+    background-color: #ffffff;
+    box-shadow: 0 0.4em 1.2em rgba(28, 0, 80, 0.08);
+    padding: 1.2em;
+    border-radius: 0.4em;
+}
+.question-div,
+.answer-div {
+    text-align: justify;
+}
+.question-div {
+    margin-bottom: 0.5em;
+    font-weight: 500;
+    color: #363d55;
+}
+.answer-div {
+    margin-top: 1em;
+    font-weight: 400;
+    color: #414a67;
+}
+.show-hide-btn {
+    display: block;
+    background-color: #374375;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding: 0.6em 0;
+    border-radius: 0.3em;
+}
+.buttons-con {
+    display: flex;
+    justify-content: flex-end;
+}
+.edit,
+.delete {
+    background-color: transparent;
+    padding: 0.5em;
+    font-size: 1.2em;
+}
+.edit {
+    color: #374375;
+}
+.delete {
+    color: #895159;
+}
+.hide {
+    display: none;
+}
+@media screen and (max-width: 800px) {
+    .card-list-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.8em;
+    }
+}
+@media screen and (max-width: 450px) {
+    body {
+        font-size: 14px;
+    }
+    .card-list-container {
+        grid-template-columns: 1fr;
+        gap: 1.2em;
+    }
+}

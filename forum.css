@@ -1,0 +1,231 @@
+* {
+    font-family: 'Karla', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #374375;
+}
+
+textarea {
+    width: 80%;
+    border-radius: 10px;
+    padding: 5px;
+    resize: none;
+}
+
+input {
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 3px;
+}
+
+.filter-container {
+    display: flex;
+    gap: 10px;
+    margin: 0 2em 0em 2em;
+    width: 60vw;
+}
+
+.filter-container h2 {
+    font-size: 1.5em;
+    color: #363d55;
+    font-weight: 600;
+}
+
+.filter-container label {
+    display: block;
+    margin-top: 10px;
+    color: #363d55;
+    font-weight: 600;
+}
+
+.filter-container select, .filter-container button {
+    display: block;
+    padding: 0 0.5em;
+    margin-top: 5px;
+}
+
+.filter-container button {
+    height: 2.7em;
+    background-color: #374375;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.3em;
+}
+
+#newThreadForm button[type="submit"] {
+    border-radius: 18px;
+    padding: 7px 13px;
+    background-color: #374375;
+    color: white;
+}
+
+.new-thread {
+    margin: 20px auto;
+    width: 90%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-thread form input[type="text"],
+.new-thread form textarea {
+    width: calc(100% - 20px);
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.new-thread form button[type="submit"] {
+    border: none;
+    margin-top: 10px;
+    padding: 20px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.choose-subject {
+    overflow: auto;
+    display: flex;
+}
+
+.choose-subject select {
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+#newThreadForm button[type="submit"]:hover {
+    background-color: #babde2;
+    color: black;
+}
+
+/* Thread list styles */
+#threadList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#threadList .row {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#threadList .row:hover {
+    background-color: #f5f5f5;
+}
+
+#threadList .row .title {
+    font-size: 0.9em;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#threadList .row .bottom {
+    display: flex;
+    align-items: center;
+    color: #777;
+    font-size: 0.8em;
+}
+
+#threadList .row p {
+    margin-right: 10px;
+}
+
+.filter-container form{
+    display: flex;
+    gap: 10px;
+    margin: 0 3.5em;
+    width: 60vw;
+}
+
+.filter-container h2 {
+    font-size: 1.5em;
+    color: #363d55;
+    font-weight: 600;
+}
+
+.filter-container label {
+    display: block;
+    margin-top: 10px;
+    color: #363d55;
+    font-weight: 600;
+}
+
+.filter-container select, .filter-container button {
+    display: block;
+    padding: 0 0.5em;
+    margin-top: 5px;
+}
+
+.filter-container button {
+    height: 2.7em;
+    background-color: #374375;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.3em;
+}
+
+.search-container {
+    margin: 15px 0 0 52px;
+}
+
+#search-input {
+    padding: 10px;
+    width: 20vw;
+    border-radius: 18px;
+    border: 0.1px solid grey;
+}
+
+#search-input:focus {
+    transition: all 0.3 ease;
+    outline: none;
+    box-shadow: 0 0 5px rgba(55, 67, 117, 0.5);
+}
+
+#search-btn {
+    margin-left: 5.5px;
+    color: #374375;
+    font-size: 17px;
+    background: transparent;
+    border: none;
+}
+
+#search-btn:hover {
+    cursor: pointer;
+}
+
+#error {
+    color: #895159;
+    font-weight: 400;
+}
+
+
+textarea.input, select.input {
+    width: 100%;
+    padding: 0.7em 0.5em;
+    border: 1px solid #d0d0d0;
+    outline: none;
+    color: #414a67;
+    border-radius: 0.3em;
+    resize: none;
+}
+
+
+
+textarea:focus, select:focus {
+    border-color: #363d55;
+}

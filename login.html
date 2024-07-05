@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login to statisticity</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=La+Belle+Aurore&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/909e7b57cd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container-box">
+        <div class="header">
+            <p>welcome back to</p>
+            <h1>statisticity.</h1>
+        </div>
+
+        <div class="container">
+            <p>log in to your account :)</p>
+            <form action="login_action.php" method="post">
+                <input type="email" name="email" placeholder="enter your email" required>
+                <input type="password" name="password" placeholder="enter your password" required>
+                <input type="submit" value="log in">
+            </form>
+            
+        </div>
+        <div class="bottom">
+            <input name="rememberme" type="checkbox" id="rememberme">
+            <label for="rememberme">remember me</label>
+        </div>
+    </div>
+
+    <script>
+        const showPasswordIcon = document.getElementById('showPasswordIcon');
+        const passwordInput = document.getElementById('password');
+
+        showPasswordIcon.addEventListener('click', function() {
+            const passwordFieldType = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', passwordFieldType);
+            this.querySelector('i').classList.toggle('fa-eye-slash');
+        });
+    </script>
+</body>
+</html>
